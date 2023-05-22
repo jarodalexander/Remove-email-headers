@@ -1,2 +1,3 @@
 # Remove-email-headers
 How to remove headers from emails in Python for NLP exploration.
+While attempting a topic model on a large set of Enron emails I ran into a particularly tough problem to crack after reading the csv file into a data frame. When I looked at the emails, they consisted mostly of headers with the actual message buried at the bottom. It took me long enough just to find out that was the exact situation. First thought it was html, then smtp, but found the asnwers in the email library modules documentation. This code shows how to navigate the formatting and reformatting necessary to extract the message only for tokenization and further analysis. Hope it helps!
